@@ -44,14 +44,32 @@ npm run new-post -- "글 제목"
 
 각 글의 frontmatter `keywords` 필드에 타겟 키워드를 채워두면 메타데이터에 반영된다.
 
-## 콘텐츠 캘린더 (다음 4주 후보)
+## 콘텐츠 캘린더 (다음 후보)
 
 1. ✅ 정산자금 외부관리 의무화 — 개정 전금법과 PG 백엔드 대응 (발행됨)
-2. 결제수수료 공시 확대 — PG사는 공시 데이터를 어떻게 자동 생성할 것인가
-3. 다단계(n차) PG 구조 규제가 가맹점 온보딩/KYC 아키텍처에 미치는 영향
+2. ✅ 다단계 PG 규제, 10월 시행 하위 PG사 분기 평가 의무 (초안/PR)
+3. 결제수수료 공시 확대 — PG사는 공시 데이터를 어떻게 자동 생성할 것인가
 4. 국내 PG사 수수료 구조 실측 비교 — 신용카드/간편결제/해외결제 기준
 
 매주 발행 기준으로 위 순서대로 진행하면 한 달 분량 확보됨. 다음 회차부터는 그 주의 실제 뉴스(금융위/법제처 공시, 업계 보도자료)를 리서치한 뒤 이 목록에서 소재를 골라 작성하는 방식을 권장 — 소재가 항상 최신이어야 "양산형 AI 콘텐츠"로 분류되지 않는다.
+
+## 자동 발행 파이프라인 (GitHub Actions)
+
+`.github/workflows/weekly-post-draft.yml`이 매주 수요일 09:00 KST(UTC 00:00)에 실행되어 최신 뉴스를 리서치하고 초안을 작성한 뒤, **main에 직접 push하지 않고** `weekly-draft/YYYY-MM-DD` 브랜치로 PR을 연다. 발행 여부는 항상 PR을 머지하는 사람이 결정한다.
+
+### 최초 설정 (한 번만)
+
+1. Claude GitHub App 설치: https://github.com/apps/claude → 이 저장소에 설치
+2. 인증 방식 선택 (저장소 Settings → Secrets and variables → Actions):
+   - **Pro/Max 구독이 있으면(권장, 별도 과금 없음)**: 로컬 터미널에서 `claude setup-token` 실행 → 나오는 토큰을 `CLAUDE_CODE_OAUTH_TOKEN` 시크릿으로 등록
+   - 구독이 없으면: [console.anthropic.com](https://console.anthropic.com)에서 API 키 발급 → `ANTHROPIC_API_KEY` 시크릿으로 등록하고, 워크플로우 파일의 `claude_code_oauth_token` 줄을 `anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}`로 교체
+3. Actions 탭 → "Weekly Fintech Blog Draft" → "Run workflow"로 한 번 수동 실행해서 정상 동작 확인
+
+### 리뷰 워크플로우
+
+매주 자동으로 열리는 PR을 열어서 Vercel이 만들어주는 프리뷰 배포 링크로 내용을 확인하고, 문제없으면 머지 → main 반영 → 프로덕션 자동 배포.
+
+> **참고**: Cowork에도 동일한 역할을 하는 주간 스케줄 작업(`weekly-fintech-blog-draft`)이 별도로 등록되어 있다. 두 파이프라인을 동시에 켜두면 매주 초안이 두 번(PR + 로컬 파일) 생기니, 이 GitHub Actions 파이프라인으로 넘어왔다면 Cowork 쪽 스케줄 작업은 꺼두는 걸 권장한다.
 
 ## 왜 이 구조인가 (설계 노트)
 
