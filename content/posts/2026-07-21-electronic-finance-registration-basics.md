@@ -69,5 +69,5 @@ category: "guide"
 ## 관련 글
 
 - [PG업(전자지급결제대행업) 등록에 필요한 자본금·인력·전산설비 요건](/posts/2026-07-22-pg-registration-capital-requirements) — 등록 대상이라면 다음으로 확인할 실제 요건
-- [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 백엔드에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 등록 이후 PG사가 지켜야 하는 대표적 의무
+- [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 등록 이후 PG사가 지켜야 하는 대표적 의무
 - [전자금융감독규정상 클라우드 이용 절차, PG·선불사가 AWS 쓸 때 놓치는 것들](/posts/2026-07-28-pg-cloud-service-usage-reporting) — 등록 이후 서버를 클라우드에 올릴 때 챙겨야 하는 절차
