@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const SITE_URL = "https://payment-tech-blog.vercel.app";
 
@@ -38,6 +39,12 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <body>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6567959460588054"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Header />
         <main className="mx-auto max-w-3xl px-4 py-10">{children}</main>
         <Footer />
