@@ -29,6 +29,9 @@ export const metadata: Metadata = {
       "PG·간편결제·전자금융 규제와 백엔드 아키텍처를 현직 엔지니어 시각으로 분석합니다.",
   },
   robots: { index: true, follow: true },
+  verification: {
+    google: "QgLmW4s9nbqp5RawDw2LpkyJiaJOmOTuqVe9DYCg0Uc",
+  },
   other: {
     "google-adsense-account": "ca-pub-6567959460588054",
   },
