@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <div>
       <p className="mb-8 text-sm text-[var(--muted)]">
-        PG·간편결제·전자금융 규제와 백엔드 아키텍처를 다룹니다. 매주 발행.
+        PG·간편결제·전자금융 규제와 시스템 아키텍처를 다룹니다. 매주 발행.
       </p>
 
       {posts.length === 0 ? (
