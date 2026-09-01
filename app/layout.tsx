@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const SITE_URL = "https://payment-tech-blog.vercel.app";
 
@@ -40,6 +41,7 @@ export default function RootLayout({
         <Header />
         <main className="mx-auto max-w-3xl px-4 py-10">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
