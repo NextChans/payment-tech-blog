@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { getAllSlugs, getPostBySlug } from "@/lib/posts";
 import { categoryLabel } from "@/lib/categories";
 import AdSlot from "@/components/AdSlot";
@@ -75,13 +76,26 @@ export default async function PostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h1 className="text-2xl font-bold">{post!.title}</h1>
-      <div className="mt-2 flex items-center gap-2 text-sm text-[var(--muted)]">
+      <Link
+        href="/"
+        className="text-sm text-[var(--muted)] hover:text-[var(--accent)]"
+      >
+        ← 목록으로
+      </Link>
+      <h1 className="mt-4 text-2xl font-bold">{post!.title}</h1>
+      <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-[var(--muted)]">
         <span>{post!.date}</span>
-        <span className="rounded-full border border-[var(--border)] px-2 py-0.5 text-xs">
-          {categoryLabel(post!.category)}
-        </span>
+        <span className="category-chip">{categoryLabel(post!.category)}</span>
       </div>
+      {post!.tags.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-1.5">
+          {post!.tags.map((tag) => (
+            <span key={tag} className="tag-chip">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      )}
       <AdSlot label="Ad" />
       <div
         className="prose-post mt-6"

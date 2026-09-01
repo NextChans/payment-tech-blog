@@ -14,7 +14,7 @@ export default function PostList({ posts }: { posts: PostMeta[] }) {
 
   return (
     <div>
-      <div className="mb-6 flex flex-wrap gap-2">
+      <div className="mb-8 flex flex-wrap gap-2">
         <FilterTab
           active={filter === "all"}
           onClick={() => setFilter("all")}
@@ -38,20 +38,27 @@ export default function PostList({ posts }: { posts: PostMeta[] }) {
         <p className="text-[var(--muted)]">해당 카테고리에는 아직 글이 없습니다.</p>
       )}
 
-      <ul className="space-y-8">
+      <ul className="grid gap-5">
         {filtered.map((post, idx) => (
           <li key={post.slug}>
-            <Link href={`/posts/${post.slug}`} className="group block">
-              <div className="flex items-center gap-2 text-sm text-[var(--muted)]">
+            <Link href={`/posts/${post.slug}`} className="post-card group">
+              <div className="flex flex-wrap items-center gap-2 text-xs text-[var(--muted)]">
                 <span>{post.date}</span>
-                <span className="rounded-full border border-[var(--border)] px-2 py-0.5 text-xs">
-                  {categoryLabel(post.category)}
-                </span>
+                <span className="category-chip">{categoryLabel(post.category)}</span>
               </div>
-              <h2 className="mt-1 text-xl font-semibold group-hover:text-[var(--accent)]">
+              <h2 className="mt-3 text-xl font-semibold group-hover:text-[var(--accent)]">
                 {post.title}
               </h2>
               <p className="mt-2 text-[var(--fg)]">{post.description}</p>
+              {post.tags.length > 0 && (
+                <div className="mt-4 flex flex-wrap gap-1.5">
+                  {post.tags.map((tag) => (
+                    <span key={tag} className="tag-chip">
+                      #{tag}
+                    </span>
+                  ))}
+                </div>
+              )}
             </Link>
             {idx === 0 && <AdSlot />}
           </li>
