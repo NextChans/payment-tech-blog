@@ -62,3 +62,4 @@ category: "regulation"
 - [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 이번 조치 대상사 중 3곳의 준수 여부가 언급된, 같은 개정법의 다른 축
 - [10월부터 시행, 1차 PG사의 하위 PG사 분기별 재무·컴플라이언스 평가 의무](/posts/2026-09-01-pg-subcontractor-quarterly-review) — 같은 티메프 사태 이후 개정법에서 나온 또 다른 건전성 관리 의무
 - [PG업(전자지급결제대행업) 등록에 필요한 자본금·인력·전산설비 요건](/posts/2026-07-22-pg-registration-capital-requirements) — 등록 시점의 최소 자본금 요건과, 등록 이후 계속 지켜야 하는 경영지도기준의 차이
+- [전자금융업자도 금융복합기업집단 규제 대상으로 — 그룹 계열사에 PG·선불업이 있다면 뭘 준비해야 하나](/posts/2026-09-03-electronic-finance-financial-conglomerate-inclusion) — 같은 날 금융위가 의결한, 대형 금융그룹 소속 전자금융업자를 겨냥한 별개의 건전성 규제

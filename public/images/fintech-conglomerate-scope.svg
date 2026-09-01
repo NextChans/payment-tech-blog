@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" role="img" aria-label="금융복합기업집단 소속금융회사 범위 확대: 개정 전과 개정 후 비교">
+  <rect x="0" y="0" width="800" height="320" fill="#0b0f14" />
+
+  <g font-family="sans-serif" fill="#e6edf3">
+    <text x="200" y="34" text-anchor="middle" font-size="15" font-weight="600" fill="#8b98a5">개정 전</text>
+    <text x="600" y="34" text-anchor="middle" font-size="15" font-weight="600" fill="#4f9dff">개정 후 (2026.7.31 의결)</text>
+
+    <rect x="60" y="56" width="280" height="230" rx="14" fill="#10161d" stroke="#1f2933" stroke-dasharray="6 4" />
+    <text x="200" y="82" text-anchor="middle" font-size="13" fill="#8b98a5">금융복합기업집단 (그룹)</text>
+
+    <rect x="90" y="100" width="220" height="56" rx="10" fill="#161d26" stroke="#4f9dff" />
+    <text x="200" y="124" text-anchor="middle" font-size="13" font-weight="600">은행·보험·증권 계열사</text>
+    <text x="200" y="142" text-anchor="middle" font-size="11" fill="#4f9dff">소속금융회사 (규제 대상)</text>
+
+    <rect x="90" y="200" width="220" height="56" rx="10" fill="#161d26" stroke="#8b98a5" stroke-dasharray="4 3" />
+    <text x="200" y="224" text-anchor="middle" font-size="13" font-weight="600" fill="#8b98a5">전자금융업자(PG·선불)</text>
+    <text x="200" y="242" text-anchor="middle" font-size="11" fill="#8b98a5">KSIC상 금융업 아니면 그룹 밖</text>
+
+    <rect x="460" y="56" width="280" height="230" rx="14" fill="#10161d" stroke="#4f9dff" stroke-width="2" />
+    <text x="600" y="82" text-anchor="middle" font-size="13" fill="#4f9dff">금융복합기업집단 (그룹)</text>
+
+    <rect x="490" y="100" width="220" height="56" rx="10" fill="#161d26" stroke="#4f9dff" />
+    <text x="600" y="124" text-anchor="middle" font-size="13" font-weight="600">은행·보험·증권 계열사</text>
+    <text x="600" y="142" text-anchor="middle" font-size="11" fill="#4f9dff">소속금융회사</text>
+
+    <rect x="490" y="200" width="220" height="56" rx="10" fill="#161d26" stroke="#4f9dff" stroke-width="2" />
+    <text x="600" y="224" text-anchor="middle" font-size="13" font-weight="600">전자금융업자(PG·선불)</text>
+    <text x="600" y="242" text-anchor="middle" font-size="11" fill="#4f9dff">업종분류 무관 소속금융회사 편입</text>
+  </g>
+</svg>
