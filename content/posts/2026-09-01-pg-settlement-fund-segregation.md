@@ -83,3 +83,4 @@ PG(전자지급결제대행업자)는 온라인에서 결제를 대신 처리해
 - [10월부터 시행, 1차 PG사의 하위 PG사 분기별 재무·컴플라이언스 평가 의무](/posts/2026-09-01-pg-subcontractor-quarterly-review) — 같은 다단계 PG 규제 흐름에서 나온 또 다른 의무
 - [PG 수수료 공시 확대, 외부수취·자체수취 분리 공시가 백엔드에 요구하는 것](/posts/2026-09-01-pg-fee-disclosure-expansion) — 정산자금 외부관리와 함께 챙겨야 하는 수수료 투명성 규제
 - [전자금융업이 뭔지, 우리 서비스가 등록 대상인지부터 확인하는 법](/posts/2026-07-21-electronic-finance-registration-basics) — 이 의무를 지는 "PG업"이 정확히 뭔지 헷갈린다면
+- [티메프 사태 이후 첫 경영개선명령 — 전자금융업자 10곳 자본금 증액 요구가 백엔드에 남긴 숙제](/posts/2026-09-02-electronic-finance-capital-improvement-order) — 이번 조치 대상사 중 3곳이 정산자금 외부관리 의무는 지키고 있었다는 배경

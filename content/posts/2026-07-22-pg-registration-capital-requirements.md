@@ -58,3 +58,4 @@ PG업의 자본금 요건은 회사가 한 분기에 얼마나 많은 결제를 
 
 - [전자금융업이 뭔지, 우리 서비스가 등록 대상인지부터 확인하는 법](/posts/2026-07-21-electronic-finance-registration-basics) — 이 요건을 갖춰야 하는 대상인지 먼저 판단하는 법
 - [전자금융감독규정상 클라우드 이용 절차, PG·선불사가 AWS 쓸 때 놓치는 것들](/posts/2026-07-28-pg-cloud-service-usage-reporting) — 전산설비를 클라우드에 구성할 때 함께 챙겨야 하는 절차
+- [티메프 사태 이후 첫 경영개선명령 — 전자금융업자 10곳 자본금 증액 요구가 백엔드에 남긴 숙제](/posts/2026-09-02-electronic-finance-capital-improvement-order) — 등록할 때 갖춘 최소 자본금과, 등록 이후 계속 지켜야 하는 경영지도기준의 차이
