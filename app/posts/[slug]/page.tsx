@@ -3,6 +3,8 @@ import AdSlot from "@/components/AdSlot";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+const SITE_URL = "https://payment-tech-blog.vercel.app";
+
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
@@ -14,15 +16,23 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   try {
     const post = await getPostBySlug(params.slug);
+    const url = `${SITE_URL}/posts/${params.slug}`;
     return {
       title: post.title,
       description: post.description,
       keywords: post.keywords,
+      alternates: { canonical: url },
       openGraph: {
         title: post.title,
         description: post.description,
         type: "article",
         publishedTime: post.date,
+        url,
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: post.title,
+        description: post.description,
       },
     };
   } catch {
@@ -42,8 +52,27 @@ export default async function PostPage({
     notFound();
   }
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post!.title,
+    description: post!.description,
+    datePublished: post!.date,
+    dateModified: post!.date,
+    keywords: post!.keywords.join(", "),
+    mainEntityOfPage: `${SITE_URL}/posts/${post!.slug}`,
+    publisher: {
+      "@type": "Organization",
+      name: "결제·핀테크 엔지니어링 브리핑",
+    },
+  };
+
   return (
     <article>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <h1 className="text-2xl font-bold">{post!.title}</h1>
       <p className="mt-2 text-sm text-[var(--muted)]">{post!.date}</p>
       <AdSlot label="Ad" />

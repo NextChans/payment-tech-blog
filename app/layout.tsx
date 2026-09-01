@@ -13,10 +13,18 @@ export const metadata: Metadata = {
   },
   description:
     "PG·간편결제·전자금융 규제와 백엔드 아키텍처를 현직 엔지니어 시각으로 분석합니다.",
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     locale: "ko_KR",
     siteName: "결제·핀테크 엔지니어링 브리핑",
+    url: SITE_URL,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "결제·핀테크 엔지니어링 브리핑",
+    description:
+      "PG·간편결제·전자금융 규제와 백엔드 아키텍처를 현직 엔지니어 시각으로 분석합니다.",
   },
   robots: { index: true, follow: true },
 };
