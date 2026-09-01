@@ -4,6 +4,7 @@ description: "전자금융감독규정의 국내 리전 강제와 RTO 요건 안
 date: "2026-08-11"
 tags: ["AWS", "가용성", "재해복구", "PG"]
 keywords: ["PG AWS 인프라 설계", "결제 시스템 재해복구", "RDS Multi-AZ 결제", "Aurora Global Database 금융", "전자금융감독규정 RTO"]
+category: "infra"
 ---
 
 [클라우드 이용 절차 글](/posts/2026-07-28-pg-cloud-service-usage-reporting)에서 다룬 것처럼, 고유식별정보·개인신용정보를 처리하는 워크로드는 국내(서울) 리전 밖으로 못 나간다. 그런데 AWS의 표준 재해복구 패턴은 대부분 "다른 리전으로 복제"를 전제로 한다. 이 글은 그 전제가 성립하지 않는 도메인에서 AWS 가용성 도구를 어떻게 조합해야 하는지를 다룬다.

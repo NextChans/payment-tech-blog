@@ -26,6 +26,7 @@ description: ""
 date: "${date}"
 tags: []
 keywords: []
+category: "" # "regulation"(규제·정책) | "infra"(인프라·시스템)
 ---
 
 `;

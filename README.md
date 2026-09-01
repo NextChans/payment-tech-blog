@@ -31,7 +31,7 @@ npm run build     # 프로덕션 빌드 검증
 npm run new-post -- "글 제목"
 ```
 
-`content/posts/YYYY-MM-DD-slug.md`가 생성된다. frontmatter(title/description/date/tags/keywords)를 채우고 본문을 마크다운으로 작성하면 끝.
+`content/posts/YYYY-MM-DD-slug.md`가 생성된다. frontmatter(title/description/date/tags/keywords/category)를 채우고 본문을 마크다운으로 작성하면 끝. `category`는 `"regulation"`(트랙 A, 규제·정책) 또는 `"infra"`(트랙 B, 인프라·시스템) 중 하나 — 홈페이지 카테고리 필터가 이 값을 기준으로 동작한다.
 
 ## 수익화 체크리스트
 
