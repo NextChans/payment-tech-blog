@@ -86,7 +86,7 @@ npm run new-post -- "글 제목"
 
 ## 자동 발행 파이프라인 (GitHub Actions)
 
-`.github/workflows/weekly-post-draft.yml`이 매주 수요일 09:00 KST(UTC 00:00)에 실행되어 최신 뉴스를 리서치하고 초안을 작성한 뒤, **main에 직접 push하지 않고** `weekly-draft/YYYY-MM-DD` 브랜치로 PR을 연다. 발행 여부는 항상 PR을 머지하는 사람이 결정한다.
+`.github/workflows/weekly-post-draft.yml`이 매주 수요일 09:00 KST(UTC 00:00)에 실행되어 최신 뉴스를 리서치하고 초안을 작성한 뒤, **main에 직접 push하지 않고** `weekly-draft/YYYY-MM-DD` 브랜치로 PR을 연다. `npm run build` 검증을 통과하면 PR을 그대로 main에 머지까지 진행한다 (2026-09-02, 사용자 지침 — 이전에는 사람이 머지했으나 자동 머지로 정책 변경).
 
 실제 작업 지침(콘텐츠 트랙, 리서치 기준, 작성 구조, 날짜 지정 규칙, SEO 체크리스트 등)은 워크플로우 파일이 아니라 `.claude/skills/weekly-blog-draft/SKILL.md`에 있다. 이 문서는 실행마다 갱신되도록 설계된 살아있는 매뉴얼이라, 워크플로우 프롬프트를 매번 고치는 대신 이 파일만 고치면 다음 실행에 반영된다.
 
@@ -100,7 +100,7 @@ npm run new-post -- "글 제목"
 
 ### 리뷰 워크플로우
 
-매주 자동으로 열리는 PR을 열어서 Vercel이 만들어주는 프리뷰 배포 링크로 내용을 확인하고, 문제없으면 머지 → main 반영 → 프로덕션 자동 배포.
+빌드 검증을 통과한 PR은 자동으로 main에 머지되어 프로덕션에 배포된다. 필요하면 머지 후에도 Vercel 배포 로그·글 내용을 확인해 문제가 있으면 되돌리기(revert) 커밋으로 수정한다.
 
 이 GitHub Actions 파이프라인이 유일한 자동화 경로다. (과거 Cowork에 동일 역할의 주간 스케줄 작업이 별도로 있었으나 중복 방지를 위해 중지했다.)
 
