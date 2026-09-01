@@ -6,6 +6,9 @@ import html from "remark-html";
 
 const POSTS_DIR = path.join(process.cwd(), "content/posts");
 
+export type { Category } from "./categories";
+import type { Category } from "./categories";
+
 export type PostMeta = {
   slug: string;
   title: string;
@@ -13,6 +16,7 @@ export type PostMeta = {
   date: string;
   tags: string[];
   keywords: string[];
+  category: Category;
 };
 
 export type Post = PostMeta & {
@@ -46,6 +50,7 @@ export function getAllPostsMeta(): PostMeta[] {
       date: data.date ?? "1970-01-01",
       tags: data.tags ?? [],
       keywords: data.keywords ?? [],
+      category: (data.category as Category) ?? "regulation",
     };
   });
   return posts.sort((a, b) => (a.date < b.date ? 1 : -1));
@@ -65,6 +70,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     date: data.date ?? "1970-01-01",
     tags: data.tags ?? [],
     keywords: data.keywords ?? [],
+    category: (data.category as Category) ?? "regulation",
     contentHtml,
   };
 }

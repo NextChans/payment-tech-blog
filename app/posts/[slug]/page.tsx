@@ -1,4 +1,5 @@
 import { getAllSlugs, getPostBySlug } from "@/lib/posts";
+import { categoryLabel } from "@/lib/categories";
 import AdSlot from "@/components/AdSlot";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -60,6 +61,7 @@ export default async function PostPage({
     datePublished: post!.date,
     dateModified: post!.date,
     keywords: post!.keywords.join(", "),
+    articleSection: categoryLabel(post!.category),
     mainEntityOfPage: `${SITE_URL}/posts/${post!.slug}`,
     publisher: {
       "@type": "Organization",
@@ -74,7 +76,12 @@ export default async function PostPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <h1 className="text-2xl font-bold">{post!.title}</h1>
-      <p className="mt-2 text-sm text-[var(--muted)]">{post!.date}</p>
+      <div className="mt-2 flex items-center gap-2 text-sm text-[var(--muted)]">
+        <span>{post!.date}</span>
+        <span className="rounded-full border border-[var(--border)] px-2 py-0.5 text-xs">
+          {categoryLabel(post!.category)}
+        </span>
+      </div>
       <AdSlot label="Ad" />
       <div
         className="prose-post mt-6"
