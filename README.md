@@ -76,6 +76,8 @@ npm run new-post -- "글 제목"
 
 `.github/workflows/weekly-post-draft.yml`이 매주 수요일 09:00 KST(UTC 00:00)에 실행되어 최신 뉴스를 리서치하고 초안을 작성한 뒤, **main에 직접 push하지 않고** `weekly-draft/YYYY-MM-DD` 브랜치로 PR을 연다. 발행 여부는 항상 PR을 머지하는 사람이 결정한다.
 
+실제 작업 지침(콘텐츠 트랙, 리서치 기준, 작성 구조, 날짜 지정 규칙, SEO 체크리스트 등)은 워크플로우 파일이 아니라 `.claude/skills/weekly-blog-draft/SKILL.md`에 있다. 이 문서는 실행마다 갱신되도록 설계된 살아있는 매뉴얼이라, 워크플로우 프롬프트를 매번 고치는 대신 이 파일만 고치면 다음 실행에 반영된다.
+
 ### 최초 설정 (한 번만)
 
 1. Claude GitHub App 설치: https://github.com/apps/claude → 이 저장소에 설치
