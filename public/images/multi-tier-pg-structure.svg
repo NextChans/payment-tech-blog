@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" role="img" aria-label="다단계 PG 구조: 카드사·은행, 1차 PG, 2차 PG, 가맹점 관계도">
+  <defs>
+    <marker id="arrow2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8b98a5" />
+    </marker>
+    <marker id="arrowAccent" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4f9dff" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="800" height="300" fill="#0b0f14" />
+
+  <g font-family="sans-serif" fill="#e6edf3">
+    <rect x="20" y="100" width="150" height="90" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="95" y="140" text-anchor="middle" font-size="16" font-weight="600">카드사·은행</text>
+    <text x="95" y="162" text-anchor="middle" font-size="12" fill="#8b98a5">결제망 최상위</text>
+
+    <line x1="170" y1="145" x2="208" y2="145" stroke="#8b98a5" stroke-width="2" marker-end="url(#arrow2)" />
+    <text x="189" y="130" text-anchor="middle" font-size="11" fill="#8b98a5">직접 계약</text>
+
+    <rect x="210" y="100" width="150" height="90" rx="12" fill="#10161d" stroke="#4f9dff" stroke-width="2" />
+    <text x="285" y="140" text-anchor="middle" font-size="16" font-weight="600">1차 PG</text>
+    <text x="285" y="162" text-anchor="middle" font-size="12" fill="#4f9dff">평가 의무 주체</text>
+
+    <line x1="360" y1="145" x2="398" y2="145" stroke="#4f9dff" stroke-width="2.5" marker-end="url(#arrowAccent)" />
+    <text x="379" y="120" text-anchor="middle" font-size="11" fill="#4f9dff" font-weight="600">분기별</text>
+    <text x="379" y="134" text-anchor="middle" font-size="11" fill="#4f9dff" font-weight="600">평가 의무</text>
+
+    <rect x="400" y="100" width="150" height="90" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="475" y="140" text-anchor="middle" font-size="16" font-weight="600">2차 PG</text>
+    <text x="475" y="162" text-anchor="middle" font-size="12" fill="#8b98a5">재위탁 하위 업체</text>
+
+    <line x1="550" y1="145" x2="588" y2="145" stroke="#8b98a5" stroke-width="2" marker-end="url(#arrow2)" />
+    <text x="569" y="130" text-anchor="middle" font-size="11" fill="#8b98a5">모집·관리</text>
+
+    <rect x="590" y="100" width="150" height="90" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="665" y="140" text-anchor="middle" font-size="16" font-weight="600">가맹점</text>
+    <text x="665" y="162" text-anchor="middle" font-size="12" fill="#8b98a5">실제 판매자</text>
+  </g>
+</svg>
