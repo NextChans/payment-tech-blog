@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 220" role="img" aria-label="우대수수료율 반기 재산정 흐름: 국세청 과세자료, 매출구간 산정, PG사 통보, 하위가맹점 반영·환급">
+  <defs>
+    <marker id="arrowFee" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4f9dff" />
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="220" fill="#0b0f14" />
+
+  <g font-family="sans-serif" fill="#e6edf3">
+    <rect x="20" y="70" width="200" height="80" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="120" y="105" text-anchor="middle" font-size="15" font-weight="600">국세청</text>
+    <text x="120" y="126" text-anchor="middle" font-size="12" fill="#8b98a5">과세자료(매출액)</text>
+
+    <line x1="220" y1="110" x2="258" y2="110" stroke="#4f9dff" stroke-width="2.5" marker-end="url(#arrowFee)" />
+
+    <rect x="260" y="70" width="200" height="80" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="360" y="98" text-anchor="middle" font-size="15" font-weight="600">매출구간 산정</text>
+    <text x="360" y="119" text-anchor="middle" font-size="12" fill="#8b98a5">반기 종료일 기준</text>
+    <text x="360" y="136" text-anchor="middle" font-size="12" fill="#8b98a5">(매년 6월·12월)</text>
+
+    <line x1="460" y1="110" x2="498" y2="110" stroke="#4f9dff" stroke-width="2.5" marker-end="url(#arrowFee)" />
+
+    <rect x="500" y="70" width="200" height="80" rx="12" fill="#10161d" stroke="#4f9dff" stroke-width="2" />
+    <text x="600" y="98" text-anchor="middle" font-size="15" font-weight="600">PG(결제대행업체)</text>
+    <text x="600" y="119" text-anchor="middle" font-size="12" fill="#4f9dff">구간 변경 통보 수신</text>
+    <text x="600" y="136" text-anchor="middle" font-size="12" fill="#4f9dff">환급 실무 주체</text>
+
+    <line x1="700" y1="110" x2="738" y2="110" stroke="#4f9dff" stroke-width="2.5" marker-end="url(#arrowFee)" />
+
+    <rect x="740" y="70" width="240" height="80" rx="12" fill="#10161d" stroke="#1f2933" />
+    <text x="860" y="98" text-anchor="middle" font-size="15" font-weight="600">하위가맹점</text>
+    <text x="860" y="119" text-anchor="middle" font-size="12" fill="#8b98a5">수수료율 반영</text>
+    <text x="860" y="136" text-anchor="middle" font-size="12" fill="#8b98a5">+ 소급분 환급</text>
+  </g>
+</svg>
