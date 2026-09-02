@@ -75,3 +75,4 @@ category: "regulation"
 
 - [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 같은 시기에 겹치는 또 다른 PG 규제 대응
 - [10월부터 시행, 1차 PG사의 하위 PG사 분기별 재무·컴플라이언스 평가 의무](/posts/2026-09-01-pg-subcontractor-quarterly-review) — 이번 수수료 변경 사전고지 의무와 같은 다단계 PG 규율 세트
+- [PG 하위가맹점 200만 곳, 반기마다 우대수수료율이 바뀐다](/posts/2026-09-06-pg-preferential-fee-rate-resegmentation) — 같은 "수수료" 주제지만 이건 공시가 아니라 수수료율 자체가 정기적으로 바뀌는 별도 제도
