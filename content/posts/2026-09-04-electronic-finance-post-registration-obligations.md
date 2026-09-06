@@ -24,6 +24,7 @@ category: "guide"
 | 하위 PG사 평가 (1차 PG만 해당) | 분기 | 다단계 PG 규율 강화 고시 | [하위 PG사 분기 평가](/posts/2026-09-01-pg-subcontractor-quarterly-review) |
 | 그룹 위험관리 편입 (대형 금융그룹 계열사만) | 상시 | 금융복합기업집단 감독규정 | [금융복합기업집단 편입](/posts/2026-09-03-electronic-finance-financial-conglomerate-inclusion) |
 | 등록사항 변경보고·변경등록 | 사유 발생일로부터 15일 이내 | 전자금융거래법 제33조의3 | 아래에서 설명 |
+| 정산기한 준수 (계약에서 정한 기한 내 지급) | 상시(2026.12.17 시행) | 전자금융거래법 제36조의3 | [정산기한 준수 의무](/posts/2026-09-08-pg-settlement-deadline-compliance-obligation) |
 
 모든 회사가 이 항목을 전부 지는 건 아니다. 그룹 위험관리는 대형 금융그룹 계열사만, 하위 PG사 평가는 1차 PG사만 해당한다. 하지만 재무건전성·정산자금 관리·등록사항 변경보고는 등록한 모든 전자금융업자에게 공통으로 적용된다.
 
@@ -58,3 +59,4 @@ category: "guide"
 - [전자금융업 등록, 신청부터 승인까지 실제 절차와 필요서류](/posts/2026-07-26-electronic-finance-registration-process) — 등록 심사를 통과하기까지의 절차, 이 글은 그 이후를 다룬다
 - [티메프 사태 이후 첫 경영개선명령 — 전자금융업자 10곳 자본금 증액 요구가 개발팀에 남긴 숙제](/posts/2026-09-02-electronic-finance-capital-improvement-order) — 재무건전성 의무를 지키지 못했을 때 실제로 벌어진 일
 - [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 등록 후 상시 의무 중 가장 시스템 변경이 큰 항목
+- [PG 정산기한 지키기, 이제 계약 문제가 아니라 법 위반 문제다](/posts/2026-09-08-pg-settlement-deadline-compliance-obligation) — 위 표의 정산기한 준수 의무를 자세히 다룬 글
