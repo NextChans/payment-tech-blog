@@ -57,3 +57,4 @@ PG/선불 회사의 규제 대응은 결국 네 가지 질문으로 요약된다
 - [전자금융감독규정상 클라우드 이용 절차, PG·선불사가 AWS 쓸 때 놓치는 것들](/posts/2026-07-28-pg-cloud-service-usage-reporting) — 이 시스템들을 어느 리전에, 어떻게 배치해야 하는지에 대한 규정
 - [AWS 기반 결제 인프라 설계 — 국내 리전 제약 안에서 가용성·재해복구 확보하기](/posts/2026-08-11-aws-payment-infra-design) — 원장·정산 시스템을 실제로 AWS 위에 올릴 때의 가용성 설계
 - [결제 시스템 모니터링·관측성 스택 — 오픈소스 vs 상용 APM](/posts/2026-09-05-payment-observability-oss-vs-commercial-apm) — 이 글에서 다룬 시스템들이 실제로 잘 도는지 지켜보는 관측성 계층을 다룬 후속편
+- [카드번호, 우리 서버에 저장해도 될까 — 토큰화 볼트 선택지 비교](/posts/2026-09-09-pg-card-data-tokenization-vault-comparison) — 원장·정산과 별개로, 카드정보 자체를 어디에 어떻게 보관할지에 대한 아키텍처 선택

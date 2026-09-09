@@ -70,3 +70,4 @@ RTO는 장애가 발생한 시점부터 흐르므로, 관측성 스택 자체의
 - [PG/선불 사업에 필요한 최소 시스템 구성 — 원장·정산·리스크·감사로그](/posts/2026-08-04-pg-prepaid-minimum-system-architecture) — 이 글에서 다룬 시스템들이 실제로 잘 도는지 지켜보는 관측성 계층
 - [전자금융감독규정상 클라우드 이용 절차, PG·선불사가 AWS 쓸 때 놓치는 것들](/posts/2026-07-28-pg-cloud-service-usage-reporting) — 관측성 데이터에도 그대로 적용되는 국내 리전 제약의 근거
 - [AWS 기반 결제 인프라 설계 — 국내 리전 제약 안에서 가용성·재해복구 확보하기](/posts/2026-08-11-aws-payment-infra-design) — 관측성 스택이 뒷받침해야 하는 RTO 요건
+- [카드번호, 우리 서버에 저장해도 될까 — 토큰화 볼트 선택지 비교](/posts/2026-09-09-pg-card-data-tokenization-vault-comparison) — 이 글에서 강조한 카드번호 마스킹 원칙이 실제로 적용되는 토큰화 아키텍처
