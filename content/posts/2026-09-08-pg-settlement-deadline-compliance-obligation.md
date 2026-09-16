@@ -83,3 +83,4 @@ category: "regulation"
 - [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 같은 개정법에서 "돈을 어디에 보관하느냐"를 다룬 글. 이번 글의 "언제 지급하느냐"와는 별개 의무다
 - [티메프 사태 이후 첫 경영개선명령 — 전자금융업자 10곳 자본금 증액 요구가 개발팀에 남긴 숙제](/posts/2026-09-02-electronic-finance-capital-improvement-order) — 경영지도기준 위반 제재가 등록업체까지 확대되기 전, 감독규정만으로 나온 첫 조치 사례
 - [전자금융업 등록 후에도 계속 지켜야 하는 의무 총정리](/posts/2026-09-04-electronic-finance-post-registration-obligations) — 대주주 변경등록 등 이번 개정법의 다른 신설 의무를 함께 정리한 글
+- [대규모유통업법 개정, 오픈마켓 정산기한 40일→20일 단축이 PG·플랫폼 개발팀에 요구하는 것](/posts/2026-09-16-marketplace-settlement-deadline-shortening) — 이번엔 "계약 기한을 지켜라"가 아니라 공정위가 기한 자체를 법으로 못박은 사례
