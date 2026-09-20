@@ -5,7 +5,7 @@ import AdSlot from "@/components/AdSlot";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-const SITE_URL = "https://payment-tech-blog.vercel.app";
+const SITE_URL = "https://fintech.ongirok.co.kr";
 
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
