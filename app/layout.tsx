@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import Script from "next/script";
 
-const SITE_URL = "https://payment-tech-blog.vercel.app";
+const SITE_URL = "https://fintech.ongirok.co.kr";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

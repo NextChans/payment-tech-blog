@@ -22,8 +22,15 @@ npm run build     # 프로덕션 빌드 검증
 
 1. 이 폴더를 GitHub 리포지토리로 push
 2. [vercel.com](https://vercel.com)에서 New Project → 해당 리포 선택 → 기본 설정 그대로 Deploy
-3. 커스텀 도메인 연결 후 `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`의 `SITE_URL`을 실제 도메인으로 교체 후 재배포
+3. 커스텀 도메인 연결 후 `app/layout.tsx`, `app/sitemap.ts`, `app/robots.ts`, `app/posts/[slug]/page.tsx`의 `SITE_URL`을 실제 도메인으로 교체 후 재배포
 4. Vercel은 무료 티어로 충분 (개인 블로그 트래픽 기준)
+
+**현재 도메인**: 애드센스 사이트 심사가 `payment-tech-blog.vercel.app`(공유 호스팅 서브도메인)에서 "준비 중" 상태로 오래 멈춰 있던 문제 때문에(2026-09-20), 별도로 보유 중인 도메인의 서브도메인 `fintech.ongirok.co.kr`로 이전했다. 코드상 `SITE_URL`은 이미 이 값으로 바꿔뒀고, 아래 절차가 남아 있다.
+
+1. 도메인 DNS 관리 콘솔에서 `fintech` 서브도메인에 CNAME 레코드 추가 → 값은 Vercel이 프로젝트 설정(Domains)에서 알려주는 주소(보통 `cname.vercel-dns.com`)
+2. Vercel 프로젝트 설정 → Domains에서 `fintech.ongirok.co.kr` 추가, DNS 전파 후 자동 SSL 발급 확인
+3. `ongirok.co.kr` 루트 도메인의 `/ads.txt`에도 `google.com, pub-6567959460588054, DIRECT, f08c47fec0942fa0` 줄을 추가해야 한다 — 애드센스는 서브도메인이어도 원칙적으로 루트 도메인의 ads.txt를 기준으로 검증하기 때문에, 이 블로그가 아닌 `ongirok.co.kr` 루트를 운영하는 쪽(별도 호스팅)에 반영해야 함
+4. 애드센스 콘솔의 "사이트" 메뉴에서 새 도메인이 인식되는지 확인 (기존 `payment-tech-blog.vercel.app` 항목은 정리 필요 여부를 나중에 판단)
 
 ## 새 글 작성
 
