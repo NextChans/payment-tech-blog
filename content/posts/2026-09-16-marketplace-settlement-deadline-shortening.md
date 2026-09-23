@@ -74,3 +74,4 @@ category: "regulation"
 - [개정 전자금융거래법, PG 정산자금 외부관리 의무화가 개발팀에 요구하는 것들](/posts/2026-09-01-pg-settlement-fund-segregation) — 관할 기관과 법 자체는 다르지만, "판매대금을 별도로 떼어 보관해야 한다"는 구조가 같은 문제의식에서 나왔다
 - [PG 정산기한 지키기, 이제 계약 문제가 아니라 법 위반 문제다](/posts/2026-09-08-pg-settlement-deadline-compliance-obligation) — 전자금융거래법은 "계약서에 정한 기한을 지켜라"였다면, 이번 대규모유통업법은 기한 자체를 법으로 못박았다는 차이가 있다
 - [10월부터 시행, 1차 PG사의 하위 PG사 분기별 재무·컴플라이언스 평가 의무](/posts/2026-09-01-pg-subcontractor-quarterly-review) — 마켓플레이스·PG·하위 PG로 이어지는 다단계 구조에서 나온 또 다른 규제
+- [전자금융거래법 PG 정의 개정, '내부정산'이면 등록 대상에서 빠진다](/posts/2026-09-23-electronic-finance-pg-incidental-settlement-exclusion) — PG 규제에서 빠지는 마켓플레이스라면, 바로 이 대규모유통업법이 대신 적용될 수 있다는 걸 다룬 글

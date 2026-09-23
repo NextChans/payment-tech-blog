@@ -87,3 +87,4 @@ PG(전자지급결제대행업자)는 온라인에서 결제를 대신 처리해
 - [전자금융업자도 금융복합기업집단 규제 대상으로 — 그룹 계열사에 PG·선불업이 있다면 뭘 준비해야 하나](/posts/2026-09-03-electronic-finance-financial-conglomerate-inclusion) — 대형 금융그룹 계열사라면, 계좌·원장 분리 다음으로 계열사 거래 구분까지 필요해진다
 - [PG 정산기한 지키기, 이제 계약 문제가 아니라 법 위반 문제다](/posts/2026-09-08-pg-settlement-deadline-compliance-obligation) — 같은 개정법에서 "돈을 어디에 보관하느냐"가 아니라 "언제 지급하느냐"를 다루는 별개 의무
 - [대규모유통업법 개정, 오픈마켓 정산기한 40일→20일 단축이 PG·플랫폼 개발팀에 요구하는 것](/posts/2026-09-16-marketplace-settlement-deadline-shortening) — 관할 기관은 다르지만(공정위), 판매대금을 별도로 떼어 보관해야 한다는 구조가 같은 문제의식에서 나온 사례
+- [전자금융거래법 PG 정의 개정, '내부정산'이면 등록 대상에서 빠진다](/posts/2026-09-23-electronic-finance-pg-incidental-settlement-exclusion) — 위에서 한 문단으로만 짚었던 PG업 정의 변경을 따로 떼어 깊게 다룬 후속 글
