@@ -8,6 +8,10 @@ export default function Footer() {
         아닙니다. 문의: <a href="mailto:babadung@gmail.com" className="underline">babadung@gmail.com</a>
       </p>
       <p className="mt-2">
+        <Link href="/about" className="underline">
+          소개
+        </Link>{" "}
+        ·{" "}
         <Link href="/privacy" className="underline">
           개인정보처리방침
         </Link>
